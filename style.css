@@ -13,3 +13,12 @@ body{
     background-color:lightblue;
     margin: auto;
 }
+
+@media screen and (max-width: 480px){
+    .container{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+
+    }
+}
