@@ -1,12 +1,10 @@
-body {
-    background-color: lightslategray;
-
+body{
+    background-image: url("https://wallpapercave.com/wp/YsmdCUB.jpg");
 }
 
-header {
-    background-color: lightsteelblue;
-}
 
-footer {
-    background-color: lightsteelblue;
+#jumbotron {
+    background-image: url("https://previews.123rf.com/images/peshkova/peshkova1708/peshkova170801160/84273204-abstract-glowing-circuit-button-on-dark-wallpaper-technology-concept-3d-rendering.jpg");
+    background-repeat: no-repeat;
+    background-position:1px;
 }
