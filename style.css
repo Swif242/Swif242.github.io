@@ -8,3 +8,8 @@ body{
     background-repeat: no-repeat;
     background-position:1px;
 }
+
+#about {
+    background-color:lightblue;
+    margin: auto;
+}
