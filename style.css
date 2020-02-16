@@ -7,18 +7,28 @@ body{
     background-image: url("https://previews.123rf.com/images/peshkova/peshkova1708/peshkova170801160/84273204-abstract-glowing-circuit-button-on-dark-wallpaper-technology-concept-3d-rendering.jpg");
     background-repeat: no-repeat;
     background-position:1px;
+    margin-bottom: 0px;
+}
+
+#header {
+    text-align: center;
 }
 
 #about {
     background-color:lightblue;
-    margin: auto;
+    
 }
 
-@media screen and (max-width: 480px){
-    .container{
+
+/* @media screen and (max-width: 480px){
+    .container-fluid{
         width: 100%;
         margin: 0px;
         padding: 0px;
+        clear: both;
 
     }
-}
+    #image{
+        overflow-wrap: break-word;
+    }
+} */
