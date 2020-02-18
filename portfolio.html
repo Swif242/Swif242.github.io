@@ -16,108 +16,92 @@
 </head>
 
 <body>
-   <!-- jumbotron header -->
-   <header id="jumbotron" class="jumbotron jumbotron-fluid">
-      <div class="container">
-         <h1 class="display-4"></h1>
-         <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
-      </div>
-   </header>
-
-
-
+ 
    <!-- navbar block-->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-         <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-            <a class="nav-item nav-link" href="contact.html">Contact</a>
-            <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-         </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item ">
+               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+         </ul>
       </div>
    </nav>
 
 
-   <main class="container-fluid">
+  <!-- jumbotron header -->
+   <div id="jumbotron" class="jumbotron-fluid">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <!-- <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p> -->
+</div>
 
-      <!-- first row -->
-      <div class="row">
-         <div class="col">
-            <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p>
-            <div class="card" style="width:400px">
-               <img class="card-img-top" src="..." alt="..." style="width:100%">
-               <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-               </div>
+   <main id="container" class="container-fluid py-3" >
+ <!-- first row -->
+      
+         <div class="row ">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4">
+               <img class="img-fluid float-left"
+                  src="https://www.billboard.com/files/styles/article_main_image/public/media/01-Eminem-press-by-Craig-McDean-2019-billboard-1548.jpg"
+                  alt="Card image cap">
+            </div>
+            <div class="col-sm-7 float-sm-left">
+               <h3 class="card-title">Project 1</h3>
+               <p class="text-wrap card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed
+                  quis
+                  totam blanditiis qui
+                  itaque dolores in consectetur vitae expedita nihil dignissimos velit dolorum id nisi ex maiores,
+                  officia voluptas.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+
             </div>
          </div>
-         <!-- column 2 -->
-         <div class="col">
-            <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p>
-            <div class="card" style="width:400px">
-               <img class="card-img-top" src="..." alt="..." style="width:100%">
-               <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-               </div>
+      
+
+
+
+
+         <!--second row  -->
+         <div class="row mt-3">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4">
+               <img class="img-fluid float-left"
+                  src="https://www.billboard.com/files/styles/article_main_image/public/media/01-Eminem-press-by-Craig-McDean-2019-billboard-1548.jpg"
+                  alt="Card image cap">
+            </div>
+            <div class="col-sm-7 float-sm-left">
+               <h3 class="card-title">Project 1</h3>
+               <p class="text-wrap card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed
+                  quis
+                  totam blanditiis qui
+                  itaque dolores in consectetur vitae expedita nihil dignissimos velit dolorum id nisi ex maiores,
+                  officia voluptas.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+
             </div>
          </div>
 
-      </div>
 
 
-     <!--second row  -->
-      <div class="row">
-         <div class="col">
-            <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p>
-            <div class="card" style="width:400px">
-               <img class="card-img-top" src="..." alt="..." style="width:100%">
-               <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-               </div>
-            </div>
-         </div>
-         <!-- column 2 -->
-         <div class="col">
-            <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p>
-            <div class="card" style="width:400px">
-               <img class="card-img-top" src="..." alt="..." style="width:100%">
-               <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-               </div>
-            </div>
+         <footer>
 
-         </div>
-      </div>
-
-
-
-
-
-
-
-
-
-      <footer>
-
-      </footer>
+         </footer>
    </main>
 
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

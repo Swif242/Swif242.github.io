@@ -1,13 +1,18 @@
-body{
-    background-image: url("https://wallpapercave.com/wp/YsmdCUB.jpg");
+#container{
+    /* background-image: url("https://wallpapercave.com/wp/YsmdCUB.jpg"); */
+    background-color: rgb(203, 224, 250);
 }
 
 
 #jumbotron {
-    background-image: url("https://previews.123rf.com/images/peshkova/peshkova1708/peshkova170801160/84273204-abstract-glowing-circuit-button-on-dark-wallpaper-technology-concept-3d-rendering.jpg");
-    background-repeat: no-repeat;
-    background-position:1px;
+    background-image:url("https://wallpapercave.com/wp/YsmdCUB.jpg");
+    /* background-image: url("https://img.wallpapersafari.com/desktop/1440/900/84/13/vB0fal.png"); */
+    color:rgb(25, 23, 36);
+    border-bottom: rgb(146, 200, 253) solid 5px;
+    border-top:rgb(201, 223, 245) solid 5px;
+    background-position:0% 25%;
     margin-bottom: 0px;
+    padding-left: 5px;
 }
 
 #header {
