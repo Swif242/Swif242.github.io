@@ -57,7 +57,7 @@ main h1{
 /* smaller screens ie: phones */
 @media screen and (max-width: 480px){
     #jumbotron{
-        background-position: 60% 25% ;
+        background-position: 54% 25% ;
     }
     #jumbotron p{
         font-weight: bold;
