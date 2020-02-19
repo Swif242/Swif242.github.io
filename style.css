@@ -1,9 +1,4 @@
-#container{
-    /* background-image: url("https://wallpapercave.com/wp/YsmdCUB.jpg"); */
-    background-color: rgb(203, 224, 250);
-}
-
-
+/* jumbotron background and style */
 #jumbotron {
     background-image:url("https://wallpapercave.com/wp/YsmdCUB.jpg");
     /* background-image: url("https://img.wallpapersafari.com/desktop/1440/900/84/13/vB0fal.png"); */
@@ -13,27 +8,35 @@
     background-position:0% 25%;
     margin-bottom: 0px;
     padding-left: 5px;
+    
+}
+/* jumbotron h1 style */
+#jumbotron h1{
+    font-family: kanit;
+}
+/* jumbotron paragraph style */
+#jumbotron p{
+    font-family: Roboto ;
 }
 
-#header {
+
+
+
+/* main body background style */
+main{
+    background-color: rgb(203, 224, 250);
+}
+/* main container paragraph style */
+main p{
+    font-family: sriracha;
+    line-height: 30px;
+    font-size: 23px;
+}
+
+/* main container h1 style */
+main h1{
+    font-family: chewy;
     text-align: center;
 }
 
-#about {
-    background-color:lightblue;
-    
-}
 
-
-/* @media screen and (max-width: 480px){
-    .container-fluid{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        clear: both;
-
-    }
-    #image{
-        overflow-wrap: break-word;
-    }
-} */
