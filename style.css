@@ -31,6 +31,7 @@ main p{
     font-family: sriracha;
     line-height: 30px;
     font-size: 23px;
+    text-indent: 30px;
 }
 
 /* main container h1 style */
@@ -39,4 +40,27 @@ main h1{
     text-align: center;
 }
 
+/* media query for jumbotron visibilty on smaller devices */
 
+
+/* medium screens ie: tablets */
+@media screen and (max-width: 768px){
+    #jumbotron{
+        background-position: 45% 25% ;
+    }
+    #jumbotron p{
+        font-weight: bold;
+        margin-left: 30px;
+    }
+}
+
+/* smaller screens ie: phones */
+@media screen and (max-width: 576px){
+    #jumbotron{
+        background-position: 60% 25% ;
+    }
+    #jumbotron p{
+        font-weight: bold;
+        margin-left: 30px;
+    }
+}
