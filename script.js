@@ -13,6 +13,7 @@ $("#date").text("Today is " + date);
 
 
 
+// contact info revealed when clicked on
 $(phone).on("click", function(){
     phone.textContent ="520-302-6653";
     console.log("test")
