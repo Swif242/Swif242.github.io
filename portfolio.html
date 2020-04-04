@@ -5,22 +5,24 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width-device-width, initial-scale=1">
-<!-- style sheets and bootstrap style CDN -->
+   <!-- style sheets and bootstrap style CDN -->
    <link rel="stylesheet" href="style.css" type="text/css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Chewy|Damion|Kanit|Sriracha|Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Chewy|Damion|Kanit|Sriracha|Roboto&display=swap"
+      rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
    <title>Portfolio</title>
 
 </head>
 
 <body>
- 
+
    <!-- navbar block-->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-         <img src="./images/JNdesigns.png" style="height: 45px; border-radius: 8px;" >
+         <img src="./images/JNdesigns.png" style="height: 45px; border-radius: 8px;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,83 +40,84 @@
                <a class="nav-link" href="contact.html">Contact</a>
             </li>
          </ul>
+         <div id="date"></div>
       </div>
    </nav>
 
 
-  <!-- jumbotron header -->
+   <!-- jumbotron header -->
    <div id="jumbotron" class="jumbotron-fluid">
-  <h1 class="display-4">It's Alive!!</h1>
-  <p class="lead">This is a collection of projects I've made on my journey to learning how to code.</p>
-  <hr class="my-4">
-</div>
+      <h1 class="display-4">It's Alive!!</h1>
+      <p class="lead">This is a collection of projects I've made on my journey to learning how to code.</p>
+      <hr class="my-4">
+   </div>
 
 
-<!-- start of main body content -->
-   <main id="container" class="container-fluid py-3" >
+   <!-- start of main body content -->
+   <main id="container" class="container-fluid py-3 clearfix">
 
- <!-- first row two columns, each row represents a new project -->
-         <div class="row ">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-4">
-               <img class="img-fluid float-left"
-                  src="/images/project-1.png"
-                  alt="image of project 1 screenshot">
-            </div>
-            <div class="col-sm-7 float-sm-left">
-               <h3 class="card-title">Laughy Tasky</h3>
-               <p class="text-wrap card-text">This is a task managing application that allows you to creat and store
-                  tasks. I myself know it can be difficult to stick to tasks so I thought it would be fun to get rewarded
-                  after completing a task with either a funny joke or an inspirational quote as motivation to stay on tasks.
-               </p>
-               <a href="https://jpino7.github.io/TasksForLaughs/" class="btn btn-primary">LaughyTasky</a>
-               <a href="https://github.com/jpino7/TasksForLaughs" class="btn btn-primary">Site Repo</a>
-
-            </div>
+      <!-- first row two columns, each row represents a new project -->
+      <div class="row ">
+         <div class="col-sm-1"></div>
+         <div class="col-sm-4">
+            <img class="img-fluid float-left" src="/images/project-1.png" alt="image of project 1 screenshot">
          </div>
-      
+         <div class="col-sm-7 float-sm-left">
+            <h3 class="card-title">Laughy Tasky</h3>
+            <p class="text-wrap card-text">This is a task managing application that allows you to creat and store
+               tasks. I myself know it can be difficult to stick to tasks so I thought it would be fun to get rewarded
+               after completing a task with either a funny joke or an inspirational quote as motivation to stay on
+               tasks.
+            </p>
+            <a href="https://jpino7.github.io/TasksForLaughs/" class="btn btn-primary">LaughyTasky</a>
+            <a href="https://github.com/jpino7/TasksForLaughs" class="btn btn-primary">Site Repo</a>
 
-
-
-
-         <!--second row, two columns-->
-         <div class="row mt-3">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-4">
-               <img class="img-fluid float-left"
-                  src="https://images.techhive.com/images/article/2015/09/project_management_intro_hp-100618227-primary.idge.jpg"
-                  alt="image of project 2 screenshot">
-            </div>
-            <div class="col-sm-7 float-sm-left">
-               <h3 class="card-title">Project 2</h3>
-               <p class="text-wrap card-text">project on its way stay tuned to see what comes next.</p>
-               
-
-            </div>
          </div>
+      </div>
 
 
 
-        
+
+
+      <!--second row, two columns-->
+      <div class="row mt-3">
+         <div class="col-sm-1"></div>
+         <div class="col-sm-4">
+            <img class="img-fluid float-left"
+               src="https://images.techhive.com/images/article/2015/09/project_management_intro_hp-100618227-primary.idge.jpg"
+               alt="image of project 2 screenshot">
+         </div>
+         <div class="col-sm-7 float-sm-left">
+            <h3 class="card-title">Project 2</h3>
+            <p class="text-wrap card-text">project on its way stay tuned to see what comes next.</p>
+
+
+         </div>
+      </div>
+
+
+
+
    </main>
 
-   <footer >
-      <nav class="nav flex-column navbar-dark bg-dark" >
-        <a class="nav-link" style="color: lightgrey;" href="https://github.com/Swif242">GitHub</a>
-        <a class="nav-link" style="color: lightgrey;" href="https://www.linkedin.com/in/jeremy-nelson-a74404198/">LinkedIn</a>
+   <footer>
+      <nav class="nav flex-column navbar-dark bg-dark">
+         <p>What you can do once, you can do twice, what you can do twice proves its no longer impossible.<br>
+            It might be harder or take longer but not impossible.   -JN
+        </p>
       </nav>
 
-    </footer>
-<!-- script CDN from bootstrap site -->
+   </footer>
+   <!-- script CDN from bootstrap site -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"> </script>
+   <script src="script.js"></script>
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
+     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+     crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
+     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+     crossorigin="anonymous"></script>
+ 
 </body>
 
 

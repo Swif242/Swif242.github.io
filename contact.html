@@ -11,6 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Chewy|Damion|Kanit|Sriracha|Roboto&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Contact</title>
 
@@ -39,6 +40,7 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
+            <div id="date"></div>
         </div>
     </nav>
 
@@ -54,121 +56,45 @@
     <main id="container" class="container-fluid py-3">
 
 
-        <!-- contact form block -->
-        <form id="contact-form" method="post" action="contact.php" role="form">
 
-            <div class="messages"></div>
-
-            <div class="controls">
-
-                <!-- first name section -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_name">FirstName *</label>
-                            <input id="form_name" type="text" name="name" class="form-control"
-                                placeholder="Please enter your firstName *" required="required"
-                                data-error="Firstname is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-
-                    <!-- lastname section -->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_lastname">LastName *</label>
-                            <input id="form_lastname" type="text" name="surname" class="form-control"
-                                placeholder="Please enter your lastName *" required="required"
-                                data-error="Lastname is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- email section -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control"
-                                placeholder="Please enter your email *" required="required"
-                                data-error="Valid email is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-
-                    <!-- drop down with need options -->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_need">Please specify your need *</label>
-                            <select id="form_need" type="text" name="need" class="form-control" required="required"
-                                data-error="Please specify your need.">
-                                <option value=""></option>
-                                <option value="Request quotation">Request more info</option>
-                                <!-- <option value="Request order status"></option>
-                             <option value="Request copy of an invoice"></option> -->
-                                <option value="Other">Other</option>
-                            </select>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- section to leave a message -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control"
-                                placeholder="Message for me *" rows="4" required="required"
-                                data-error="Please, leave me a message."></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <input type="submit" class="btn btn-success btn-send" value="Send message">
-                    </div>
-                </div>
-
-                <!-- form footer -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-muted">
-                            <strong>*</strong> These fields are required.
-                            <!-- <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p> -->
-                    </div>
-                </div>
+        <div id="contact-card" class="card" style="width: 350px; height: 200px; margin-top: 60px;">
+            <div class="card-header" style="text-align: center; font-weight: bold;">
+                Contact Me
             </div>
-
-        </form>
-
-
-
-
-
-
-
+            <ul id="contact" class="list-group list-group-flush">
+                <li id="phone" class="list-group-item">Phone: <em>click to view</em> </li>
+                <li id="email" class="list-group-item">Email: <em>click to view</em></li>
+                <li id="resume" class="list-group-item"><a target="_blank" href="/images/Jeremy Nelson .pdf"
+                        style="color: black;">Resume: <em>click to view</em></a></li>
+                <li id="github" class="list-group-item"><a target="_blank" href="https://github.com/Swif242"
+                        style="color: black;">GitHub: <em>click to view</em></a></li>
+                <li id="linkedin" class="list-group-item"><a target="_blank"
+                        href="https://www.linkedin.com/in/jeremy-nelson-a74404198/" style="color: black;">LinkedIn:
+                        <em>click to view</em></a></li>
+            </ul>
+        </div>
 
     </main>
-    <footer>
+    <footer id="footer">
         <nav class="nav flex-column navbar-dark bg-dark">
-            <a class="nav-link" style="color: lightgrey;" href="https://github.com/Swif242">GitHub</a>
-            <a class="nav-link" style="color: lightgrey;"
-                href="https://www.linkedin.com/in/jeremy-nelson-a74404198/">LinkedIn</a>
+
+            <p>What you can do once, you can do twice, what you can do twice proves its no longer impossible.<br>
+                It might be harder or take longer but not impossible.   -JN
+            </p>
         </nav>
 
     </footer>
 
     <!-- script CDN from bootstrap site -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"> </script>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
 </body>
 
 
